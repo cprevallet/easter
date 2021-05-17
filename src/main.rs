@@ -43,7 +43,7 @@ fn main() {
     // e.g. "env RUST_LOG=info cargo run"
     // e.g. "env RUST_LOG=debug cargo run"
     env_logger::init();
-    info! ("entering calc_easter");
+    info! ("initializing");
     let utc: DateTime<Utc> = Utc::now();
     debug!("The current UTC date/time is {}", utc);
     debug!("The current UTC date is {}", Utc::today());
@@ -54,4 +54,5 @@ fn main() {
     println!("easter is  {}", result1);
     let result2 = calc_easter(1961);
     println!("easter is  {}", result2);
+    info! ("exiting");
 }
