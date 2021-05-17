@@ -1,5 +1,6 @@
 use chrono::prelude::*;
-use log::{error, warn, info, debug, trace};
+//use log::{error, warn, info, debug, trace};
+use log::{info, debug};
 use std::convert::TryInto;
 
 fn calc_easter(year:i32) -> Date<chrono::Utc> {
